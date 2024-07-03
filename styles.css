@@ -30,7 +30,7 @@ body {
 .code-container {
     display: flex;
     justify-content: space-between;
-}
+	   }
 
 .code {
     width: 40px;
