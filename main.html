@@ -5,10 +5,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OTP Verification</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #verification_heading {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        #verification_subtext {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .code-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .code {
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            font-size: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 0 5px;
+        }
+
+        .code:focus {
+            border-color: #007BFF;
+            outline: none;
+        }
+    </style>
 </head>
 
 <body>
+	
     <div class="container">
         <h1 id="verification_heading">OTP Verification</h1>
         <p id="verification_subtext">Enter the verification code we sent to your email</p>
@@ -21,8 +71,6 @@
             <input type="text" class="code" maxlength="1">
         </div>
     </div>
-
-    <script src="script.js"></script>
 </body>
 
 </html>
